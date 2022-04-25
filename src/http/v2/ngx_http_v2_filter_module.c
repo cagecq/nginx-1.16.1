@@ -1663,10 +1663,10 @@ static ngx_http_v2_out_frame_t *
 ngx_http_v2_filter_get_data_frame(ngx_http_v2_stream_t *stream,
     size_t len, ngx_chain_t *first, ngx_chain_t *last)
 {
-    u_char                     flags;
-    ngx_buf_t                 *buf;
-    ngx_chain_t               *cl;
-    ngx_http_v2_out_frame_t   *frame;
+    u_char                    flags;
+    ngx_buf_t                *buf;
+    ngx_chain_t              *cl;
+    ngx_http_v2_out_frame_t  *frame;
     ngx_http_v2_connection_t  *h2c;
 
     frame = stream->free_frames;
